@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Static/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../../Static/Imagenes/favicon.png" type="image/x-icon">
+    <title>Laberinto de Letras</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="../../index.html"> <img src="../../Static/Imagenes/lab1.png" alt="logo-laberinto">
+            <h1 class="titulo">Laberinto de Letras</h1>
+        </a>
+
+        <div class="hamburger">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+        <nav class="navegacion">
+            <ul id="nav-links" class="header-nav">
+                <li><a href="../../index.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../../Static/Imagenes/Icons/Home.png"
+                            alt="Home" class="icono">Inicio</a></li>
+                <li><a href="#" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../../Static/Imagenes/Icons/Book.png"
+                            alt="Book" class="icono">Libros</a>
+                    <ul class="sub-menu">
+                        <li> <a href="../ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+                        <li> <a href="../fantasia.html" class="links"> Fantasía </a></li>
+                        <li> <a href="../ficcion.html" class="links"> Ficción literaria </a></li>
+                        <li> <a href="../misterio.html" class="links"> Misterio </a></li>
+                        <li> <a href="../romantico.html" class="links"> Romántico </a></li>
+                    </ul>
+                </li>
+                <li><a href="../contactos.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../../Static/Imagenes/Icons/Contact.png"
+                            alt="Contact" class="icono">Contactos</a></li>
+                <li><a href="../login.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../../Static/Imagenes/Icons/Login.png"
+                            alt="Login" class="icono">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="superior" class="superior">
+            <div class="portada-grande">
+                <img src="../../Static/Imagenes/Portadas/en-agosto-nos-vemos.jpg" alt="En Agosto Nos Vemos" height="450"
+                    width="300">
+            </div>
+
+            <div class="detalles-libro-grande">
+                <h2 class="titulo-grande">En Agosto Nos Vemos</h2>
+                <p class="genero-grande">Ficción Literaria</p>
+                <p class="autor-grande">García Marquez, Gabriel</p>
+                <p class="precio-grande">$19.990,00</p>
+                <div class="sinopsis">
+                    <h4>Sinopsis</h4>
+                    <p>Cada mes de agosto Ana Magdalena Bach toma el transbordador hasta la isla donde está enterrada su
+                        madre para visitar la tumba en la que yace. Esas visitas acaban suponiendo una irresistible
+                        invitación a convertirse en una persona distinta durante una noche al año. Escrita en el
+                        inconfundible y fascinante estilo de García Márquez, En agosto nos vemos es un canto a la vida,
+                        a la
+                        resistencia del goce pese al paso del tiempo y al deseo femenino. Un regalo inesperado para los
+                        innumerables lectores del Nobel colombiano.</p>
+                </div>
+                <button id="buy-btn" class="boton-compra" type="button">Comprar</button>
+            </div>
+
+        </section>
+        <section class="inferior">
+            <!-- La idea es poner en la ficha teccnica las cosas tipo ISBN, numero de paginas, editorial y todo eso -->
+            <div class="ficha-tecnica">
+                <h3>Ficha técnica</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> Autor</th>
+                            <td class="celda-derecha">García Marquez, Gabriel</td>
+                        </tr>
+                        <tr>
+                            <th>Género</th>
+                            <td class="celda-derecha">Ficción Literaria</td>
+                        </tr>
+                        <tr>
+                            <th>Editorial</th>
+                            <td class="celda-derecha">Sudamericana</td>
+                        </tr>
+                        <tr>
+                            <th>Páginas</th>
+                            <td class="celda-derecha">144</td>
+                        </tr>
+                        <tr>
+                            <th>Idioma</th>
+                            <td class="celda-derecha">Español</td>
+                        </tr>
+                        <tr>
+                            <th>ISBN</th>
+                            <td class="celda-derecha">9789500770224</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../../index.html">
+                        <img src="../../Static/Imagenes/lab1.png" alt="logo-laberinto">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <ul>
+                    <li><a href="#" class="message">Empleos (Proximamente)</a></li>
+                    <li><a href="#" class="message">Acerca de nosotros (Proximamente)</a></li>
+                    <li><a href="#" class="message">Asistencia (Proximamente)</a></li>
+                    <li><a href="../contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <div class="iconos-redes">
+                        <a class="message instagram" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-instagram'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message facebook" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-facebook-circle'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message twitter" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-twitter'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message youtube" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-youtube'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <p>&copy; 2024 <b>Codo a Codo</b> Todos los Derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../Static/js/alerta.js"></script>
+    <script src="../../Static/js/Animaciones.js"></script>
+    <script src="../../Static/js/Hamburguesa.js"></script>
+
+</body>
+
+</html>

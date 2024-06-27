@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Static/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../Static/Imagenes/favicon.png" type="image/x-icon">
+    <title>Contactos</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="../index.html"> <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+            <h1 class="titulo">Laberinto de Letras</h1>
+        </a>
+
+        <div class="hamburger">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+        <nav class="navegacion">
+            <ul id="nav-links" class="header-nav">
+                <li><a href="../index.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Home.png" alt="Home"
+                            class="icono">Inicio</a></li>
+                <li><a href="#" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Book.png" alt="Book"
+                            class="icono">Libros</a>
+                    <ul class="sub-menu">
+                        <li> <a href="./ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+                        <li> <a href="./fantasia.html" class="links"> Fantasía </a></li>
+                        <li> <a href="./ficcion.html" class="links"> Ficción literaria </a></li>
+                        <li> <a href="./misterio.html" class="links"> Misterio </a></li>
+                        <li> <a href="./romantico.html" class="links"> Romántico </a></li>
+                    </ul>
+                </li>
+                <li><a href="./contactos.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png"
+                            alt="Contact" class="icono">Contactos</a></li>
+                <li><a href="./login.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
+                            class="icono">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina-contacto">
+            <div class="wrap-pagina-contacto">
+                <h2>Contactos</h2>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap-two-column">
+                <div class="column-half-1">
+                    <h2>Nuestros contactos</h2>
+                    <p><img src="../Static/Imagenes/Icons/Phone.png" alt="Phone" class="icono">Tel : (011) 4572-3086</p>
+                    <p><img src="../Static/Imagenes/Icons/Location.png" alt="Location" class="icono">Direccion : Av.
+                        Monroe 2922 CABA</p>
+                    <p><img src="../Static/Imagenes/Icons/Mail.png" alt="Mail" class="icono">Email: <a
+                            href="mailto:laberintodeletras@gmail.com">laberintodeletras@gmail.com</a></p>
+                </div>
+                <div class="column-half">
+                    <h2>Formulario de contacto</h2>
+                    <p>Completar todos los campos antes de enviar la consulta</p>
+                    <form action="#" class="formulario-contacto">
+                        <input type="text" placeholder="Nombre" id="contacto-nombre" required>
+                        <span class="error-contacto" id="error-nombre"></span>
+                        <input type="text" placeholder="Email" id="contacto-email" required>
+                        <span class="error-contacto" id="error-email"></span>
+                        <input type="text" placeholder="Asunto" id="contacto-asunto" required>
+                        <span class="error-contacto" id="error-asunto"></span>
+                        <textarea id="contacto-consulta" cols="30" rows="5" placeholder="  Tu consulta"
+                            required></textarea>
+                        <span class="error-contacto-textarea" id="error-consulta"></span>
+                        <button type="button" class="contact-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="mapa-2">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6934774381075!2d-58.46739992565672!3d-34.56131555525764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb680769810bd%3A0x8fc95ffd92749078!2sLABERINTO!5e0!3m2!1ses!2sar!4v1715546753265!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <ul>
+                    <li><a href="#" class="message">Empleos (Proximamente)</a></li>
+                    <li><a href="#" class="message">Acerca de nosotros (Proximamente)</a></li>
+                    <li><a href="#" class="message">Asistencia (Proximamente)</a></li>
+                    <li><a href="./contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <div class="iconos-redes">
+                        <a class="message instagram" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-instagram'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message facebook" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-facebook-circle'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message twitter" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-twitter'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message youtube" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-youtube'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <p>&copy; 2024 <b>Codo a Codo</b> Todos los Derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../Static/js/Animaciones.js"></script>
+    <script src="../Static/js/Hamburguesa.js"></script>
+    <script src="../Static/js/Contactos.js"></script>
+
+</body>
+
+</html>

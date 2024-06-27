@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laberinto de Letras</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./Static/css/styles.css">
+  <link rel="shortcut icon" href="./Static/Imagenes/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo"> <img src="./Static/Imagenes/lab1.png" alt="logo-laberinto">
+      <h1 class="titulo">Laberinto de Letras</h1>
+    </a>
+
+    <div class="hamburger">
+      <span class="lines"></span>
+      <span class="lines"></span>
+      <span class="lines"></span>
+    </div>
+    <nav class="navegacion">
+      <ul id="nav-links" class="header-nav">
+        <li><a href="index.html" class="links" onmouseover="activarAnimacion(event)"
+            onmouseleave="detenerAnimacion(event)"><img src="./Static/Imagenes/Icons/Home.png" alt="Home"
+              class="icono">Inicio</a></li>
+        <li><a href="#" class="links" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img
+              src="./Static/Imagenes/Icons/Book.png" alt="Book" class="icono">Libros</a>
+          <ul class="sub-menu">
+            <li> <a href="./templates/ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+            <li> <a href="./templates/fantasia.html" class="links"> Fantasía </a></li>
+            <li> <a href="./templates/ficcion.html" class="links"> Ficción literaria </a></li>
+            <li> <a href="./templates/misterio.html" class="links"> Misterio </a></li>
+            <li> <a href="./templates/romantico.html" class="links"> Romántico </a></li>
+          </ul>
+        </li>
+        <li><a href="./templates/contactos.html" class="links" onmouseover="activarAnimacion(event)"
+            onmouseleave="detenerAnimacion(event)"><img src="./Static/Imagenes/Icons/Contact.png" alt="Contact"
+              class="icono">Contactos</a></li>
+        <li><a href="./templates/login.html" class="links" onmouseover="activarAnimacion(event)"
+            onmouseleave="detenerAnimacion(event)"><img src="./Static/Imagenes/Icons/Login.png" alt="Login"
+              class="icono">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+
+  <main class="contenido">
+
+    <section class="mas-vendidos">
+      <div class="titulo-mas-vendidos">
+        <h2>Los más vendidos</h2>
+      </div>
+      <br>
+      <div class="contenedor">
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/en-agosto-nos-vemos.jpg" alt="En agosto Nos Vemos" width="100"
+              height="400"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>En Agosto Nos
+                  Vemos</span></a></p>
+            <p class="genero-libro-libro">Ficción literaria</p>
+            <p class="autor">García Marquez, Gabriel</p>
+            <p class="precio">$19.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/comentarios-al-naucrato.jpg" alt="comentarios al naucrato" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Comentarios al
+                  Naucrato</span></a></p>
+            <p class="genero-libro-libro">Ciencia ficción</p>
+            <p class="autor">Rebord, Tomás</p>
+            <p class="precio">$18.900,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/cora.jpg" alt="En agosto Nos Vemos" width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Cora</span></a></p>
+            <p class="genero-libro-libro">Ficción literaria</p>
+            <p class="autor">Fernández Diaz, Jorge</p>
+            <p class="precio">$19.900,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/la-ciudad-y-sus-muros-inciertos.jpg" alt="La ciudad y sus Muros Inciertos"
+              width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>La ciudad y
+                  sus muros inciertos</span></a></p>
+            <p class="genero-libro-libro">Ficción literaria</p>
+            <p class="autor">Murakami, Haruki</p>
+            <p class="precio">$29.900,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/baumgartner.jpg" alt="baumgartner" width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Baumgartner</span></a>
+            </p>
+            <p class="genero-libro-libro">Ficción literaria</p>
+            <p class="autor">Auster, Paul</p>
+            <p class="precio">$22.900,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/el-viento-conoce-mi-nombre.jpg" alt="El viento conoce mi nombre"
+              width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>El viento conoce
+                  mi nombre</span></a></p>
+            <p class="genero-libro-libro">Ficción literaria</p>
+            <p class="autor">Allende, Isabel</p>
+            <p class="precio">$23.399,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/los-siete-maridos-de-evelyn.jpg" alt="Los Siete Maridos de Evelyn Hugo"
+              width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Los Siete
+                  Maridos de Evelyn Hugo</span></a></p>
+            <p class="genero-libro-libro">Ficción literaria</p>
+            <p class="autor">Jenkins Reid, Taylor</p>
+            <p class="precio">$30700,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/alas-de-hierro.jpg" alt="Alas de Hierro" width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Alas de
+                  Hierro</span></a>
+            </p>
+            <p class="genero-libro-libro">Ficción literaria</p>
+            <p class="autor">Yarros, Rebecca</p>
+            <p class="precio">$34.900,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/el-problema-de-los-tres-cuerpos.jpg" alt="Trilogía de los Tres Cuerpos"
+              width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Trilogía de
+                  los
+                  Tres Cuerpos</span></a></p>
+            <p class="genero-libro-libro">Ciencia ficción</p>
+            <p class="autor">Liu, Cixin</p>
+            <p class="precio">$27.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/juego-de-tronos.jpg" alt="Juego de Tronos" width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Juego de
+                  Tronos</span></a>
+            </p>
+            <p class="genero-libro-libro">Fantasía</p>
+            <p class="autor">Martin, George R. R.</p>
+            <p class="precio">$25.990,00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-libros">
+      <div class="title-top-libros">
+        <h2>Los más leidos</h2>
+      </div>
+      <div class="contenedor">
+
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/el-heroe-de-las-eras.jpg" alt="El heroe de las eras" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>El heroe de las
+                  eras</span></a></p>
+            <p class="genero-libro-libro">Fantasía</p>
+            <p class="autor">Sanderson, Brandon</p>
+            <p class="precio">$29.700,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/choque-de-reyes.jpg" alt="choque de reyes" width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Choque de
+                  reyes</span></a>
+            </p>
+            <p class="genero-libro-libro">Fantasía</p>
+            <p class="autor">Martin, George R.R.</p>
+            <p class="precio">$32.899.99</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/juego-de-tronos.jpg" alt="Juego de Tronos" width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Juego de
+                  Tronos</span></a>
+            </p>
+            <p class="genero-libro-libro">Fantasía</p>
+            <p class="autor">Martin, George R. R.</p>
+            <p class="precio">$25.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/el-psicoanalista-en-la-mira.jpg" alt="El Psicoanalista en la mira"
+              width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>El
+                  Psicoanalista
+                  en la mira</span></a></p>
+            <p class="genero-libro-libro">Thriller psicológico</p>
+            <p class="autor">Katzenbach, John</p>
+            <p class="precio">$18.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/la-paciente-silenciosa.jpg" alt="La Paciente Silenciosa" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>La Paciente
+                  Silenciosa</span></a></p>
+            <p class="genero-libro-libro">Thriller psicológico</p>
+            <p class="autor">Michaelides, Alex</p>
+            <p class="precio">$21.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/la-casa-de-los-suicidios.jpg" alt="La Casa de los Suicidios" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>La Casa de los
+                  Suicidios</span></a></p>
+            <p class="genero-libro-libro">Thriller</p>
+            <p class="autor">Oates, Joyce Carol</p>
+            <p class="precio">$17.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/en-agosto-nos-vemos.jpg" alt="En agosto Nos Vemos" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>En Agosto Nos
+                  Vemos</span></a></p>
+            <p class="genero-libro-libro">Ficción literaria</p>
+            <p class="autor">García Marquez, Gabriel</p>
+            <p class="precio">$19.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/diez-dias-para-no-morir.jpg" alt="Diez Días para no Morir" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Diez Días para no
+                  Morir</span></a></p>
+            <p class="genero-libro-libro">Suspenso</p>
+            <p class="autor">Doughty, Caitlin</p>
+            <p class="precio">$23.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/las-garras-del-aguila.jpg" alt="Las Garras del Águila" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>Las Garras del
+                  Águila</span></a></p>
+            <p class="genero-libro-libro">Novela histórica</p>
+            <p class="autor">Kane, Ben</p>
+            <p class="precio">$20.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/no-te-duermas.jpg" alt="No Te Duermas" width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><span>No Te Duermas</span></a>
+            </p>
+            <p class="genero-libro-libro">Suspense</p>
+            <p class="autor">Coben, Harlan</p>
+            <p class="precio">$22.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <div class="portada-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"><img
+                src="./Static/Imagenes/Portadas/el-problema-final.jpg" alt="El Problema Final" width="168"
+                height="240"></a></div>
+
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href=""><span>El Problema Final</span></a></p>
+            <p class="genero-libro">Misterio</p>
+            <p class="autor">Perez Reverte, Arturo</p>
+            <p class="precio">$23.399,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <div class="portada-libro"><a href=""><img src="./Static/Imagenes/Portadas/casa-de-tierra-y-sangre.jpg"
+                alt="Casa de Tierra y Sangre"></a>
+          </div>
+
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href=""><span>Casa de Tierra y Sangre</span></a></p>
+            <p class="genero-libro">Fantasía</p>
+            <p class="autor">Maas, Sarah J.</p>
+            <p class="precio">$43.399,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <div class="portada-libro"><a href=""><img
+                src="./Static/Imagenes/Portadas/lo-que-la-nieve-susurra-al-caer.jpg"
+                alt="Lo Que la Nieve Susurra al Caer" width="168" height="240"></a></div>
+
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href=""><span>Lo Que La Nieve Susurra al Caer</span></a></p>
+            <p class="genero-libro">Romantico</p>
+            <p class="autor">Martinez, María</p>
+            <p class="precio">$17.900,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/el-pozo-de-la-ascension.jpg" alt="El Pozo de la Ascensión" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="../templates/Libros/el-pozo-de-la-ascension.html"><span>El Pozo de la
+                  Ascensión</span></a></p>
+            <p class="genero-libro-libro">Fantasía épica</p>
+            <p class="autor">Sanderson, Brandon</p>
+            <p class="precio">$24.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/el-problema-de-los-tres-cuerpos.jpg" alt="Trilogía de los Tres Cuerpos"
+              width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="../templates/Libros/trilogia-de-los-tres-cuerpos.html"><span>Trilogía de
+                  los
+                  Tres Cuerpos</span></a></p>
+            <p class="genero-libro-libro">Ciencia ficción</p>
+            <p class="autor">Liu, Cixin</p>
+            <p class="precio">$27.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/los-dias-del-venado.jpg" alt="Los Días del Venado" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="../templates/Libros/los-dias-del-venado.html"><span>Los Días del
+                  Venado</span></a></p>
+            <p class="genero-libro-libro">Fantasía épica</p>
+            <p class="autor">Roas, David</p>
+            <p class="precio">$24.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/amor-y-otras-palabras.jpg" alt="Amor en otras palabras" width="100"
+              height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="../templates/Libros/amor-en-otras-palabras.html"><span>Amor en otras
+                  palabras</span></a></p>
+            <p class="genero-libro-libro">Romance</p>
+            <p class="autor">Han, Jenny</p>
+            <p class="precio">$16.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/el-viento-conoce-mi-nombre.jpg" alt="El Viento Conoce mi Nombre"
+              width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="../templates/Libros/el-viento-conoce-mi-nombre.html"><span>El Viento Conoce
+                  mi Nombre</span></a></p>
+            <p class="genero-libro-libro">Drama</p>
+            <p class="autor">Mejía, Carolina</p>
+            <p class="precio">$19.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+              src="./Static/Imagenes/Portadas/la-ciudad-y-sus-muros-inciertos.jpg" alt="La Ciudad y sus Muros Insértos"
+              width="100" height="200"></a>
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="../templates/Libros/la-ciudad-y-sus-muros-insertos.html"><span>La Ciudad
+                  y
+                  sus Muros Insértos</span></a></p>
+            <p class="genero-libro-libro">Novela contemporánea</p>
+            <p class="autor">Martínez, Antonio</p>
+            <p class="precio">$22.990,00</p>
+          </div>
+        </div>
+        <div class="libros">
+          <div class="portada-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="./Static/Imagenes/Portadas/adios-cachorra.jpg" alt="Adios Cachorra" width="168" height="200"></a>
+          </div>
+
+          <div class="detalles-libro">
+            <p class="titulo-libro"><a href="./templates/Libros/en-agosto-nos-vemos.html"
+                class="portada-libro"><span>Adios Cachorra</span></a></p>
+            <p class="genero-libro">Romantico</p>
+            <p class="autor">Numer, Lucia</p>
+            <p class="precio">$23.500,00</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <section>
+      <div>
+        <h2 class="title-top-libros">Generos</h2>
+      </div>
+      <div class="gallery">
+        <a href="./templates/ciencia-ficcion.html" class="image-link">
+          <img src="./Static/Imagenes/ciencia_ficcion.jpeg" alt="Ciencia">
+          <div class="over">Ciencia Ficción</div>
+          <div class="subtitle"></div>
+        </a>
+        <a href="./templates/fantasia.html" class="image-link">
+          <img src="./Static/Imagenes/fantasia.jpg" alt="Fantasía">
+          <div class="over">Fantasía</div>
+          <div class="subtitle"></div>
+        </a>
+        <a href="./templates/romantico.html" class="image-link">
+          <img src="./Static/Imagenes/romance.jpg" alt="Romance">
+          <div class="over">Romance</div>
+          <div class="subtitle"></div>
+        </a>
+        <a href="./templates/misterio.html" class="image-link">
+          <img src="./Static/Imagenes/Terror.jpg" alt="Misterio">
+          <div class="over">Misterio</div>
+          <div class="subtitle"></div>
+        </a>
+        <a href="./templates/ficcion.html" class="image-link">
+          <img src="./Static/Imagenes/Ficcion.jpg" alt="Ficción">
+          <div class="over">Ficción Literaria</div>
+          <div class="subtitle"></div>
+        </a>
+      </div>
+      <br>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="./Static/Imagenes/lab1.png" alt="logo-laberinto">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>SOBRE NOSOTROS</h2>
+        <ul>
+          <li><a href="#" class="message">Empleos (Proximamente)</a></li>
+          <li><a href="#" class="message">Acerca de nosotros (Proximamente)</a></li>
+          <li><a href="#" class="message">Asistencia (Proximamente)</a></li>
+          <li><a href="./templates/contactos.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>SIGUENOS</h2>
+        <div class="red-social">
+          <div class="iconos-redes">
+            <a class="message instagram" href="#" onmouseover="showPopup(event)" onmouseleave="hidePopup(event)"><i
+                class='bx bxl-instagram'></i>
+              <span class="popup-message">Función disponible próximamente</span></a>
+            <a class="message facebook" href="#" onmouseover="showPopup(event)" onmouseleave="hidePopup(event)"><i
+                class='bx bxl-facebook-circle'></i>
+              <span class="popup-message">Función disponible próximamente</span></a>
+            <a class="message twitter" href="#" onmouseover="showPopup(event)" onmouseleave="hidePopup(event)"><i
+                class='bx bxl-twitter'></i>
+              <span class="popup-message">Función disponible próximamente</span></a>
+            <a class="message youtube" href="#" onmouseover="showPopup(event)" onmouseleave="hidePopup(event)"><i
+                class='bx bxl-youtube'></i>
+              <span class="popup-message">Función disponible próximamente</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <p>&copy; 2024 <b>Codo a Codo</b> Todos los Derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./Static/js/Animaciones.js"></script>
+  <script src="./Static/js/Hamburguesa.js"></script>
+
+</body>
+
+</html>

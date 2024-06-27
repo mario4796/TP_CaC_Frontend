@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto de Letras</title>
+    <link rel="stylesheet" href="../Static/css/styles.css">
+    <link rel="shortcut icon" href="../Static/Imagenes/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="../index.html"> <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+            <h1 class="titulo">Laberinto de Letras</h1>
+        </a>
+
+        <div class="hamburger">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+        <nav class="navegacion">
+            <ul id="nav-links" class="header-nav">
+                <li><a href="../index.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Home.png" alt="Home"
+                            class="icono">Inicio</a></li>
+                <li><a href="#" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Book.png" alt="Book"
+                            class="icono">Libros</a>
+                    <ul class="sub-menu">
+                        <li> <a href="./ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+                        <li> <a href="./fantasia.html" class="links"> Fantasía </a></li>
+                        <li> <a href="./ficcion.html" class="links"> Ficción literaria </a></li>
+                        <li> <a href="./misterio.html" class="links"> Misterio </a></li>
+                        <li> <a href="./romantico.html" class="links"> Romántico </a></li>
+                    </ul>
+                </li>
+                <li><a href="./contactos.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png"
+                            alt="Contact" class="icono">Contactos</a></li>
+                <li><a href="./login.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
+                            class="icono">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <section id="libros-genero">
+                <div class="titulo-genero">
+                    <h2>Libros de Ciencia ficción</h2>
+                </div>
+                <div id="contenedor-libros">
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/comentarios-al-naucrato.jpg"
+                                alt="comentarios al naucrato" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Comentarios al
+                                        Naucrato</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Rebord, Tomás</p>
+                            <p class="precio">$18.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-problema-de-los-tres-cuerpos.jpg"
+                                alt="Trilogía de los Tres Cuerpos" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Trilogía de los
+                                        Tres Cuerpos</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Liu, Cixin</p>
+                            <p class="precio">$27.990,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/las-indignas.jpg" alt="Las Indignas" width="100"
+                                height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Las
+                                        Indignas</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Bazterrica, Agustina</p>
+                            <p class="precio">$14.499,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/dune.webp" alt="Dune" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Dune</span></a>
+                            </p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Herbert, Frank</p>
+                            <p class="precio">$31.199,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/1984.jpg" alt="1984" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>1984</span></a>
+                            </p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Orwell, George</p>
+                            <p class="precio"></p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/trilogia-de-la-fundacion.jpg"
+                                alt="Trilogia de la Fundacion" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Trilogia de la
+                                        Fundación</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Asimov, Isaac</p>
+                            <p class="precio">$33.499,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/desafiante.jpg" alt="Desafiante" width="100"
+                                height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a
+                                    href="./Libros/en-agosto-nos-vemos.html"><span>Desafiante</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Sanderson, Brandon</p>
+                            <p class="precio">$29.299,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/skyhunter.jpg" alt="Skyhunter" width="100"
+                                height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a
+                                    href="./Libros/en-agosto-nos-vemos.html"><span>Skyhunter</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Lu, Marie</p>
+                            <p class="precio">$24.600,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-hombre-en-el-castillo.jpg"
+                                alt="ElHombre en el Castillo" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Hombre en el
+                                        Castillo</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Dick, Philip K.</p>
+                            <p class="precio">$22.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/en-el-oscuro-corazon-del-bosque.jpg"
+                                alt="En el Oscuro Corazon del Bosque" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>En el Oscuro
+                                        Corazon del Bosque</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Novik, Naomi</p>
+                            <p class="precio">$45.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/fiasco.jpg" alt="Fiasco" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Fiasco</span></a>
+                            </p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Lem, Stanislav</p>
+                            <p class="precio">$31.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/neuromante.jpg" alt="Neuromante" width="100"
+                                height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a
+                                    href="./Libros/en-agosto-nos-vemos.html"><span>Neuromante</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Gibson, William</p>
+                            <p class="precio">$22.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/herederos-del-caos.jpg" alt="Herederos del Caos"
+                                width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Herederos del
+                                        Caos</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Tchaikovsky, Adrian</p>
+                            <p class="precio">$32.500,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/metro-2034.jpg" alt="Metro 2034" width="100"
+                                height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Metro
+                                        2034</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Glukhovsky, Dmitry</p>
+                            <p class="precio">$27.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/colapso.webp" alt="Colapso" width="100"
+                                height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Colapso</span></a>
+                            </p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Carbajo, Manu</p>
+                            <p class="precio">$40.800,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/en-llamas.webp" alt="En Llamas" width="100"
+                                height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>En
+                                        Llamas</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Collins, Suzanne</p>
+                            <p class="precio">$29.299,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/memorias-encontradas-en-una-bañera.jpg"
+                                alt="Memorias Encontradas en una Bañera" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Memorias
+                                        Encontradas en una Bañera</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Lem, Stanislaw</p>
+                            <p class="precio">$24.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/lo-irreal-y-lo-real.jpg" alt="Lo Irreal y lo Real"
+                                width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Lo Irreal y Lo
+                                        Real</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Le Guin, Ursula</p>
+                            <p class="precio">$28.100,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/segunda-fundacion.webp" alt="Segunda Fundacion"
+                                width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Segunda
+                                        Fundacion</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Asimov, Isaac</p>
+                            <p class="precio">$17.799,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-cielo-de-medianoche.webp"
+                                alt="El Cielo de Medianoche" width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Cielo de
+                                        Medianoche</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Brooks-Dalton, Lily</p>
+                            <p class="precio">$20.999,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-profesor-donda.jpg" alt="Profesor Donda" width="100"
+                                height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Profesor
+                                        Donda</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Lem, Stanislaw</p>
+                            <p class="precio">$19.999,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-año-del-diluvio.jpg"
+                                alt="El Año del Diluvio width"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Año del
+                                        Diluvio</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Atwood,Margaret</p>
+                            <p class="precio">$33.499,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/fundacion-e-imperio.jpg" alt="Fundacion e Imperio"
+                                width="100" height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Fundacion e
+                                        Imperio</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Asimov, Isaac</p>
+                            <p class="precio">$16.899,00</p>"
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/nosotros.webp" alt="Nosotros" width="100"
+                                height="200"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a
+                                    href="./Libros/en-agosto-nos-vemos.html"><span>Nosotros</span></a></p>
+                            <p class="genero-libro-libro">Ciencia ficción</p>
+                            <p class="autor">Zamiatin, Yevgueni</p>
+                            <p class="precio">$17.500,00</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <div class="pagination" id="pagination">
+                <a href="#" id="prev" class="page-ctrl">Anterior</a>
+                <a href="#" class="page-link" data-page="1">1</a>
+                <a href="#" class="page-link" data-page="2">2</a>
+                <a href="#" id="next" class="page-ctrl">Siguiente</a>
+                <p id="page-numbers"> </p>
+            </div>
+
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <ul>
+                    <li><a href="#" class="message">Empleos (Proximamente)</a></li>
+                    <li><a href="#" class="message">Acerca de nosotros (Proximamente)</a></li>
+                    <li><a href="#" class="message">Asistencia (Proximamente)</a></li>
+                    <li><a href="./contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <div class="iconos-redes">
+                        <a class="message instagram" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-instagram'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message facebook" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-facebook-circle'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message twitter" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-twitter'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message youtube" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-youtube'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <p>&copy; 2024 <b>Codo a Codo</b> Todos los Derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../Static/js/Animaciones.js"></script>
+    <script src="../Static/js/Hamburguesa.js"></script>
+    <script src="../Static/js/pagination.js"></script>
+
+</body>
+
+</html>

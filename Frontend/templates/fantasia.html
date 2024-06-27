@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto de Letras</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Static/css/styles.css">
+    <link rel="shortcut icon" href="../Static/Imagenes/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="../index.html"> <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+            <h1 class="titulo">Laberinto de Letras</h1>
+        </a>
+
+        <div class="hamburger">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+        <nav class="navegacion">
+            <ul id="nav-links" class="header-nav">
+                <li><a href="../index.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Home.png" alt="Home"
+                            class="icono">Inicio</a></li>
+                <li><a href="#" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Book.png" alt="Book"
+                            class="icono">Libros</a>
+                    <ul class="sub-menu">
+                        <li> <a href="./ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+                        <li> <a href="./fantasia.html" class="links"> Fantasía </a></li>
+                        <li> <a href="./ficcion.html" class="links"> Ficción literaria </a></li>
+                        <li> <a href="./misterio.html" class="links"> Misterio </a></li>
+                        <li> <a href="./romantico.html" class="links"> Romántico </a></li>
+                    </ul>
+                </li>
+                <li><a href="./contactos.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png"
+                            alt="Contact" class="icono">Contactos</a></li>
+                <li><a href="./login.html" class="links" onmouseover="activarAnimacion(event)"
+                        onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
+                            class="icono">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <section id="libros-genero">
+                <div class="titulo-genero">
+                    <h2>Libros de Fantasía</h2>
+                </div>
+                <div id="contenedor-libros">
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/alas-de-hierro.jpg" alt="Alas de Hierro"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Alas de
+                                        Hierro</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Yarros, Rebecca</p>
+                            <p class="precio">$34.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/alas-de-sangre.jpg" alt="Alas de Sangre"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Alas de
+                                        Sangre</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Yarros, Rebecca</p>
+                            <p class="precio">$29.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-pozo-de-la-ascension.jpg"
+                                alt="El Pozo de la Ascension"></a>
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Pozo de la
+                                        Ascension</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Sanderson, Brandon</p>
+                            <p class="precio">$39.799,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-heroe-de-las-eras.jpg"
+                                alt="El Heroe De las Eras"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Héroe de las
+                                        Eras</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Sanderson, Brandon</p>
+                            <p class="precio">$29.799,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-dias-del-venado.jpg" alt="Los Dias Del Venado"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Los Días del
+                                        Venado</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Bodoc, Liliana</p>
+                            <p class="precio">$15.299,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/choque-de-reyes.jpg" alt="Choque de Reyes"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Choque de
+                                        Reyes</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Martin, George R.R.</p>
+                            <p class="precio">$32.899,00 </p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/buenos-presagios.jpg" alt="Buenos Presagios"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Buenos
+                                        Presagios</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Pratchett, Terry; Gaiman, Neil</p>
+                            <p class="precio">$27.900,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/juego-de-tronos.jpg" alt="Juego de Tronos"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Juego de
+                                        Tronos</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Martin, George R.R.</p>
+                            <p class="precio">$32.899,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/fuego-y-sangre.jpeg" alt=""></a>
+
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Fuego y
+                                        Sangre</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Martin, George R.R.</p>
+                            <p class="precio">$46.999,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/elantris.jpg" alt="Elantris"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a
+                                    href="./Libros/en-agosto-nos-vemos.html"><span>Elantris</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Sanderson, Brandon</p>
+                            <p class="precio">$39.799,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/puro.jpg" alt="Puro"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Puro</span></a>
+                            </p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Armentrout, Jennifer</p>
+                            <p class="precio">$27.300,00</p>
+                        </div>
+                    </div>
+
+
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-enclaves-dorados.jpg"
+                                alt="Los Enclaves Dorados"></a>
+
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Los Enclaves
+                                        Dorados</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Novik, Naomi</p>
+                            <p class="precio">$29.200,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/tormenta-de-espadas.jpg" alt="Tormenta de Espadas"></a>
+
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Tormenta de
+                                        Espadas</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Martin, George, R.R.</p>
+                            <p class="precio">$32.899,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/el-camino-de-los-reyes.JPG"
+                                alt="El Camino de los Reyes"></a>
+
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Camino de los
+                                        Reyes</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Sanderson, Brandon</p>
+                            <p class="precio">$46.999,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-fragiles-hilos-del-poder.jpg"
+                                alt="Los Fragiles Hilos del Poder" width="168" height="240"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Los Fragiles Hilos
+                                        del Poder</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Schwab, V.E.</p>
+                            <p class="precio">$39.400,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/festin-de-cuervos.jpg" alt="Festin de Cuervos"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Festín de
+                                        Cuervos</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Martin, George R.R.</p>
+                            <p class="precio">$32.899,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/danza-de-dragones.jpg" alt="Danza de Dragones"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Danza de
+                                        Dragones</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Martin, George R.R.</p>
+                            <p class="precio">$32.899,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/trenza-del-mar-esmeralda.jpg"
+                                alt="Trenza del Mar Esmeralda"></a>
+
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Trenza del Mar
+                                        Esmeralda</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Sanderson, Brandon</p>
+                            <p class="precio">$29.299,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/arcanum-ilimitado.webp" alt="Arcanum Ilimitado"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Arcanum
+                                        Ilimitado</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Sanderson, Brandon</p>
+                            <p class="precio">$39.799,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/esquirla-del-amanecer.jpg"
+                                alt="Esquirla del Amanecer"></a>
+
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html">
+                                    <span>Esquirla del Amanecer</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Sanderson, Brandon</p>
+                            <p class="precio">$21.499,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/las-cronicas-del-mundo.jpg"
+                                alt="Las Crónicas del Mundo"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Las Cronicas del
+                                        Mundo</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Bodoc, Liliana</p>
+                            <p class="precio">$26.299,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/casa-de-tierra-y-sangre.jpg"
+                                alt="Casa de Tierra y Sangre"></a>
+
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Casa de Tierra y
+                                        Sangre</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Maas, Sarah J.</p>
+                            <p class="precio">$43.399,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-dias-del-fuego.jpg" alt="Los Dias del Fuego"></a>
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Los Dias del
+                                        Fuego</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Bodoc, Liliana</p>
+                            <p class="precio">$20.799,00</p>
+                        </div>
+                    </div>
+                    <div class="libros">
+                        <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                                src="../Static/Imagenes/Portadas/los-dias-de-la-sombra.jpg"
+                                alt="Los Dias de la Sombra"></a>
+
+
+                        <div class="detalles-libro">
+                            <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Los Días de la
+                                        Sombra</span></a></p>
+                            <p class="genero-libro">Fantasía</p>
+                            <p class="autor">Bodoc, Liliana</p>
+                            <p class="precio">$15.299,00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="pagination" id="pagination">
+                <a href="#" id="prev" class="page-ctrl">Anterior</a>
+                <a href="#" class="page-link" data-page="1">1</a>
+                <a href="#" class="page-link" data-page="2">2</a>
+                <a href="#" id="next" class="page-ctrl">Siguiente</a>
+                <p id="page-numbers"> </p>
+            </div>
+
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <ul>
+                    <li><a href="#" class="message">Empleos (Proximamente)</a></li>
+                    <li><a href="#" class="message">Acerca de nosotros (Proximamente)</a></li>
+                    <li><a href="#" class="message">Asistencia (Proximamente)</a></li>
+                    <li><a href="./contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <div class="iconos-redes">
+                        <a class="message instagram" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-instagram'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message facebook" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-facebook-circle'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message twitter" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-twitter'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                        <a class="message youtube" href="#" onmouseover="showPopup(event)"
+                            onmouseleave="hidePopup(event)"><i class='bx bxl-youtube'></i>
+                            <span class="popup-message">Función disponible próximamente</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <p>&copy; 2024 <b>Codo a Codo</b> Todos los Derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../Static/js/Animaciones.js"></script>
+    <script src="../Static/js/Hamburguesa.js"></script>
+    <script src="../Static/js/pagination.js"></script>
+
+</body>
+
+</html>

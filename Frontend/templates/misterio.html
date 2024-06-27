@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laberinto de Letras</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../Static/css/styles.css">
+  <link rel="shortcut icon" href="../Static/Imagenes/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html"> <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+      <h1 class="titulo">Laberinto de Letras</h1>
+    </a>
+
+    <div class="hamburger">
+      <span class="lines"></span>
+      <span class="lines"></span>
+      <span class="lines"></span>
+    </div>
+    <nav class="navegacion">
+      <ul id="nav-links" class="header-nav">
+        <li><a href="../index.html" class="links" onmouseover="activarAnimacion(event)"
+            onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Home.png" alt="Home"
+              class="icono">Inicio</a></li>
+        <li><a href="#" class="links" onmouseover="activarAnimacion(event)" onmouseleave="detenerAnimacion(event)"><img
+              src="../Static/Imagenes/Icons/Book.png" alt="Book" class="icono">Libros</a>
+          <ul class="sub-menu">
+            <li> <a href="./ciencia-ficcion.html" class="links"> Ciencia ficción </a></li>
+            <li> <a href="./fantasia.html" class="links"> Fantasía </a></li>
+            <li> <a href="./ficcion.html" class="links"> Ficción literaria </a></li>
+            <li> <a href="./misterio.html" class="links"> Misterio </a></li>
+            <li> <a href="./romantico.html" class="links"> Romántico </a></li>
+          </ul>
+        </li>
+        <li><a href="./contactos.html" class="links" onmouseover="activarAnimacion(event)"
+            onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Contact.png" alt="Contact"
+              class="icono">Contactos</a></li>
+        <li><a href="./login.html" class="links" onmouseover="activarAnimacion(event)"
+            onmouseleave="detenerAnimacion(event)"><img src="../Static/Imagenes/Icons/Login.png" alt="Login"
+              class="icono">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main-container">
+      <section id="libros-genero">
+        <div class="titulo-genero">
+          <h2>Libros de Misterio</h2>
+        </div>
+        <div id="contenedor-libros">
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/el-psicoanalista-en-la-mira.jpg" alt="El Psicoanalista en la Mira"
+                width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Psicoanalista en la
+                    Mira</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Katzenbach, John</p>
+              <p class="precio">$35.399,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/el-problema-final.jpg" alt="El Problema Final" width="168"
+                height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Problema Final</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Perez Reverte, Arturo</p>
+              <p class="precio">$23.399,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/la-paciente-silenciosa.jpg" alt="La Paciente Silenciosa" width="168"
+                height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>La Paciente
+                    Silenciosa</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Michaelides, Alex</p>
+              <p class="precio">$21.699,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/la-casa-de-los-suicidios.jpg" alt="La Casa de los Suicidios"
+                width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>La Casa de Los
+                    Suicidios</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Donlea, Charlie</p>
+              <p class="precio">$23.500,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/no-te-duermas.jpg" alt="No te Duermas" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>No te Duermas</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Willingham, Stacy</p>
+              <p class="precio">$22.500,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/jaque-al-psicoanalista.jpg" alt="Jaque al Psicoanalista" width="168"
+                height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Jaque al
+                    Psicoanalista</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Katzenbach, John</p>
+              <p class="precio">$24.799,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/diez-dias-para-no-morir.jpg" alt="Diez Dias Para No Morir" width="168"
+                height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Diez Días Para no
+                    Morir</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Larenn, Luz</p>
+              <p class="precio">$15.300,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/las-garras-del-aguila.jpg" alt="Las Garras del Aguila" width="168"
+                height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Las Garras del Aguila</span></a>
+              </p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Smirnoff, Karin</p>
+              <p class="precio">$29.900,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/dolce-inferno.jpg" alt="Dolce Inferno" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Dolce Inferno</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Petryk, Mar</p>
+              <p class="precio"> $30.900,00></p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/foxglove.webp" alt="Foxglove" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Foxglove</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Grace,Adalyn</p>
+              <p class="precio">$27.600,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/la-voz-ausente.jpg" alt="La Voz Ausente" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>La Voz Ausente</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Rolon,Gabriel</p>
+              <p class="precio">$29.00,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/el-caso-alaska-sanders.webp" alt="" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Caso Alaska
+                    Sanders</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Dicker,Joel</p>
+              <p class="precio">$31.899,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/verity.jpg" alt="Verity" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Verity</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Hoover, Colleen</p>
+              <p class="precio">$28.500,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/los-chicos-de-biloxi.jpg" alt="Los Chicos de Biloxi" width="168"
+                height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Los Chicos de Biloxi</span></a>
+              </p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Grisha,, John</p>
+              <p class="precio">$35.399,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/alguien-morira-esta-noche.jpg" alt="Alguien Morira Esta Noche"
+                width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Alguien Morirá Esta
+                    Noche</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Liotti, Noelia</p>
+              <p class="precio">$26.180,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/el-instinto.webp" alt="El Instinto" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Instinto</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Audrian, Ashley</p>
+              <p class="precio">$20.999,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/tormenta-de-nieve-y-aroma-de-almendras.jpg"
+                alt="Tormenta de Nieve y Aroma de Almendras" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Tormenta de Nieve y Aroma de
+                    Almendras</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Lackberg, Camilla</p>
+              <p class="precio">$13.400,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/los-adversarios.webp" alt="Los Adversarios" width="168"
+                height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Los Adversarios</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Grisham, John</p>
+              <p class="precio">$25.999,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/terapia.webp" alt="Terapia" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Terapia</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Fitzek, Sebastian</p>
+              <p class="precio">$16.899,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/las-doncellas.webp" alt="Las doncellas" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Las Doncellas</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Michaelides, Alex</p>
+              <p class="precio">$19.999,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/el-espejismo.jpg" alt="El Espejismo" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>El Espejismo</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Lackberg, Camilla</p>
+              <p class="precio">$35.900,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/los-ultimos-dias-de-julio-verne.jpg"
+                alt="Los Ultimos Dias de Julio Verne" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Los Ultimos Dias de Julio
+                    Verne</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Olguin, Sergio</p>
+              <p class="precio">$23.000,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/tuya.jpg" alt="Tuya" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Tuya</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Pieiro, Claudia</p>
+              <p class="precio">$11.299,00</p>
+            </div>
+          </div>
+          <div class="libros">
+            <a href="./Libros/en-agosto-nos-vemos.html" class="portada-libro"><img
+                src="../Static/Imagenes/Portadas/verdad-o-reto.jpg" alt="Verdad o Reto" width="168" height="240"></a>
+
+            <div class="detalles-libro">
+              <p class="titulo-libro"><a href="./Libros/en-agosto-nos-vemos.html"><span>Verdad o Reto</span></a></p>
+              <p class="genero-libro">Misterio</p>
+              <p class="autor">Lackberg, Camilla</p>
+              <p class="precio">$14.900,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="pagination" id="pagination">
+        <a href="#" id="prev" class="page-ctrl">Anterior</a>
+        <a href="#" class="page-link" data-page="1">1</a>
+        <a href="#" class="page-link" data-page="2">2</a>
+        <a href="#" id="next" class="page-ctrl">Siguiente</a>
+        <p id="page-numbers"> </p>
+      </div>
+
+    </div>
+  </main>
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="../index.html">
+            <img src="../Static/Imagenes/lab1.png" alt="logo-laberinto">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>SOBRE NOSOTROS</h2>
+        <ul>
+          <li><a href="#" class="message">Empleos (Proximamente)</a></li>
+          <li><a href="#" class="message">Acerca de nosotros (Proximamente)</a></li>
+          <li><a href="#" class="message">Asistencia (Proximamente)</a></li>
+          <li><a href="./contactos.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>SIGUENOS</h2>
+        <div class="red-social">
+          <div class="iconos-redes">
+            <a class="message instagram" href="#" onmouseover="showPopup(event)" onmouseleave="hidePopup(event)"><i
+                class='bx bxl-instagram'></i>
+              <span class="popup-message">Función disponible próximamente</span></a>
+            <a class="message facebook" href="#" onmouseover="showPopup(event)" onmouseleave="hidePopup(event)"><i
+                class='bx bxl-facebook-circle'></i>
+              <span class="popup-message">Función disponible próximamente</span></a>
+            <a class="message twitter" href="#" onmouseover="showPopup(event)" onmouseleave="hidePopup(event)"><i
+                class='bx bxl-twitter'></i>
+              <span class="popup-message">Función disponible próximamente</span></a>
+            <a class="message youtube" href="#" onmouseover="showPopup(event)" onmouseleave="hidePopup(event)"><i
+                class='bx bxl-youtube'></i>
+              <span class="popup-message">Función disponible próximamente</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <p>&copy; 2024 <b>Codo a Codo</b> Todos los Derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../Static/js/Animaciones.js"></script>
+  <script src="../Static/js/Hamburguesa.js"></script>
+  <script src="../Static/js/pagination.js"></script>
+
+</body>
+
+</html>
