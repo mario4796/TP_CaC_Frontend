@@ -376,6 +376,158 @@ nav ul li:hover>ul {
   color: black;
 }
 
+/*Agregar liros*/
+
+.book-banner {
+  background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(../Imagenes/libros.jpg) center;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wrap-book-banner {
+  color: #fff;
+  font-size: 26px;
+}
+
+.book-banner-subtitle {
+  font-size: 20px;
+}
+
+.books-section {
+  max-width: max-content;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  max-width: max-content;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), url(../Imagenes/Background/Back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#form .d-flex {
+  justify-content: space-around;
+
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control label {
+  color: black;
+}
+
+.form-control input {
+  height: 50px;
+  width: 98%;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: black;
+  font-size: 1rem;
+  padding: 0 20px;
+}
+
+/*.form-select {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid black; 
+  border-radius: 25px;
+}*/
+
+.btn-cac {
+  padding: 14px;
+  background-color: rgb(149, 163, 17);
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+
+.form-select option {
+  color: #2a2a2a;
+}
+
+.h3-books {
+  color: black;
+  font-size: 1.5vw;
+  margin-top: 20px;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  margin: 30px 0px;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: black;
+  vertical-align: top;
+  border-color: black;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  border-bottom: 1px solid black;
+}
+
+.table td {
+  border-bottom: 1px solid #4f4f4f;
+}
+
+#list-div-movies {
+  width: 100%;
+}
+
+.item-movie {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+
 /* Contactos */
 
 .pagina-contacto {
@@ -401,7 +553,7 @@ nav ul li:hover>ul {
 
 .wrap-pagina-contacto {
   color: #fff;
-  font-size: 40px;
+  font-size: 28px;
 }
 
 .wrap-two-column {
@@ -727,7 +879,8 @@ textarea.error-input-contacto {
   margin-bottom: 20px;
 }
 
-.input-login input, .input-login select {
+.input-login input,
+.input-login select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -846,7 +999,7 @@ button:hover {
   background-color: rgba(0, 50, 30, 0.8);
 }
 
-#error-pais{
+#error-pais {
   position: relative;
   bottom: 0px;
   left: 2px;
@@ -855,7 +1008,8 @@ button:hover {
   background-color: rgba(0, 50, 30, 0.8);
 }
 
-input.error-input, select.error-input {
+input.error-input,
+select.error-input {
   border: 2px solid red;
 }
 

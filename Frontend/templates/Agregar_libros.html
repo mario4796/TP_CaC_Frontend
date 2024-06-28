@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../Static/css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../Static/Imagenes/favicon.png" type="image/x-icon">
-    <title>Contactos</title>
+    <title>Agregar libros</title>
 </head>
 
 <body>
@@ -53,46 +53,69 @@
     </header>
 
     <main>
-        <section class="pagina-contacto">
-            <div class="wrap-pagina-contacto">
-                <h2>Contactos</h2>
+        <section class="book-banner">
+            <div class="wrap-book-banner">
+                <h2>Agregar un libro</h2>
+                <p class="book-banner-subtitle">En esta sección se podra llevar a cabo la recomendacion de libros para
+                    agregar a
+                    la pagina</p>
             </div>
         </section>
 
-        <section class="section">
-            <div class="wrap-two-column">
-                <div class="column-half-1">
-                    <h2>Nuestros contactos</h2>
-                    <p><img src="../Static/Imagenes/Icons/Phone.png" alt="Phone" class="icono">Tel : (011) 4572-3086</p>
-                    <p><img src="../Static/Imagenes/Icons/Location.png" alt="Location" class="icono">Direccion : Av.
-                        Monroe 2922 CABA</p>
-                    <p><img src="../Static/Imagenes/Icons/Mail.png" alt="Mail" class="icono">Email: <a
-                            href="mailto:laberintodeletras@gmail.com">laberintodeletras@gmail.com</a></p>
-                </div>
-                <div class="column-half">
-                    <h2>Formulario de contacto</h2>
-                    <p>Completar todos los campos antes de enviar la consulta</p>
-                    <form action="#" class="formulario-contacto">
-                        <input type="text" placeholder="Nombre" id="contacto-nombre" required>
-                        <span class="error-contacto" id="error-nombre"></span>
-                        <input type="text" placeholder="Email" id="contacto-email" required>
-                        <span class="error-contacto" id="error-email"></span>
-                        <input type="text" placeholder="Asunto" id="contacto-asunto" required>
-                        <span class="error-contacto" id="error-asunto"></span>
-                        <textarea id="contacto-consulta" cols="30" rows="5" placeholder="  Tu consulta"
-                            required></textarea>
-                        <span class="error-contacto-textarea" id="error-consulta"></span>
-                        <button type="button" class="contact-button">Enviar</button>
+        <section class="books-section">
+            <div class="books-container">
+                <section id="form">
+                    <form action="#" id="form-books">
+                        <div class="d-flex">
+                            <div class="form-control d-flex-column">
+                                <!-- <label for="title">Título</label> -->
+                                <input type="text" class="input-search" name="title" id="title" placeholder="Titulo">
+                            </div>
+                            <div class="form-control d-flex-column">
+                                <!-- <label for="author">Autor</label> -->
+                                <input type="text" class="input-search" name="author" id="author" placeholder="Autor">
+                            </div>
+                            <div class="form-control d-flex-column">
+                                <!-- <label for="genre">Genero</label> -->
+                                <input type="text" class="input-search" name="genre" id="genre" placeholder="Genero">
+                            </div>
+                            <div class="form-control d-flex-column">
+                                <!-- <label for="publisher">Editorial</label> -->
+                                <input type="text" class="input-search" name="publisher" id="publisher-date"
+                                    placeholder="Editorial">
+                            </div>
+                            <div class="form-control d-flex-column">
+                                <!-- <label for="pages">Paginas</label> -->
+                                <input type="number" class="input-search" name="pages" id="pages" placeholder="Páginas">
+                            </div>
+                            <div class="form-control d-flex-column">
+                                <!-- <label for="isbn">ISBN</label> -->
+                                <input type="number" class="input-search" name="isbn" id="isbn-form" placeholder="ISBN">
+                            </div>
+                            <input type="hidden" name="id" id="id-movie">
+                            <button class="btn-cac" type="button" id="btn-save-movie">Agregar</button>
+                        </div>
                     </form>
-                </div>
+                </section>
+                <section id="list" class="container">
+                    <h3 class="h3-books">Listado de libros</h3>
+                    <table id="list-table-movies" class="table">
+                        <thead>
+                            <tr>
+                                <th>Titulo</th>
+                                <th>Autor</th>
+                                <th>Genero</th>
+                                <th>Editorial</th>
+                                <th>Paginas</th>
+                                <th>ISBN</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-table-movies">
+                        </tbody>
+                    </table>
+                </section>
             </div>
         </section>
-        <div class="mapa-2">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6934774381075!2d-58.46739992565672!3d-34.56131555525764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb680769810bd%3A0x8fc95ffd92749078!2sLABERINTO!5e0!3m2!1ses!2sar!4v1715546753265!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
     </main>
 
     <footer class="pie-pagina">
@@ -140,7 +163,6 @@
 
     <script src="../Static/js/Animaciones.js"></script>
     <script src="../Static/js/Hamburguesa.js"></script>
-    <script src="../Static/js/Contactos.js"></script>
 
 </body>
 
