@@ -83,33 +83,23 @@
                                 <input type="text" class="input-search" name="publisher" id="publisher-date"
                                     placeholder="Editorial">
                             </div>
-                            <div class="form-control d-flex-column">
-                                <!-- <label for="pages">Paginas</label> -->
-                                <input type="number" class="input-search" name="pages" id="pages" placeholder="Páginas">
-                            </div>
-                            <div class="form-control d-flex-column">
-                                <!-- <label for="isbn">ISBN</label> -->
-                                <input type="number" class="input-search" name="isbn" id="isbn-form" placeholder="ISBN">
-                            </div>
-                            <input type="hidden" name="id" id="id-movie">
-                            <button class="btn-cac" type="button" id="btn-save-movie">Agregar</button>
+                            <input type="hidden" name="id" id="id-book">
+                            <button class="btn-cac" type="button" id="btn-save-book">Agregar</button>
                         </div>
                     </form>
                 </section>
                 <section id="list" class="container">
                     <h3 class="h3-books">Listado de libros</h3>
-                    <table id="list-table-movies" class="table">
+                    <table id="list-table-books" class="table">
                         <thead>
                             <tr>
                                 <th>Titulo</th>
                                 <th>Autor</th>
                                 <th>Genero</th>
                                 <th>Editorial</th>
-                                <th>Paginas</th>
-                                <th>ISBN</th>
                             </tr>
                         </thead>
-                        <tbody id="tbody-table-movies">
+                        <tbody id="tbody-table-books">
                         </tbody>
                     </table>
                 </section>
@@ -162,6 +152,7 @@
 
     <script src="../Static/js/Animaciones.js"></script>
     <script src="../Static/js/Hamburguesa.js"></script>
+    <script src="../Static/js/crud-books-fetch.js"></script>
 
 </body>
 

@@ -1,6 +1,9 @@
 from flask import jsonify, request
 from app.models import Book
 
+def index():
+    return '<h1>Hola, bienvenido a Laberinto de letras</h1>'
+
 def get_all_books():
 
     books = Book.get_all()
