@@ -39,7 +39,7 @@ async function showBooks() {
         let tr = `<tr>
                     <td>${book.title}</td>
                     <td>${book.author}</td>
-                    <td>${book.gender}</td>
+                    <td>${book.genre}</td>
                     <td>${book.publisher}</td>
                     <td>
                         <button class="btn-cac" onclick='updateMovie(${book.id_book})'><i class="fa fa-pencil" ></button></i>
@@ -56,11 +56,11 @@ async function showBooks() {
  * @returns 
  */
 async function saveMovie() {
-    const idMovie = document.querySelector('#id-book').value;
+    const idBook = document.querySelector('#id-book').value;
     const title = document.querySelector('#title').value;
     const author = document.querySelector('#author').value;
-    const releaseDate = document.querySelector('#release-date').value;
-    const publisher = document.querySelector('#publisher-form').value;
+    const genre = document.querySelector('#genre').value;
+    const publisher = document.querySelector('#publisher').value;
     //VALIDACION DE FORMULARIO
     if (!title || !author || !releaseDate || !publisher) {
         Swal.fire({
@@ -75,13 +75,13 @@ async function saveMovie() {
     const bookData = {
         title: title,
         author: author,
-        gender: releaseDate,
+        genre: genre,
         publisher: publisher,
     };
     let result = null;
     // Si hay un idMovie, realiza una petición PUT para actualizar la película existente
-    if (idMovie !== "") {
-        result = await fetchData(`${BASEURL}/api/books/${idMovie}`, 'PUT', bookData);
+    if (idBook !== "") {
+        result = await fetchData(`${BASEURL}/api/books/${idBook}`, 'PUT', bookData);
     } else {
         // Si no hay idMovie, realiza una petición POST para crear una nueva película
         result = await fetchData(`${BASEURL}/api/books/`, 'POST', bookData);
@@ -126,24 +126,24 @@ function deleteMovie(id) {
 async function updateMovie(id) {
     //Buscamos en el servidor la pelicula de acuerdo al id
     let response = await fetchData(`${BASEURL}/api/books/${id}`, 'GET');
-    const idMovie = document.querySelector('#id-book');
+    const idBook = document.querySelector('#id-book');
     const title = document.querySelector('#title');
     const author = document.querySelector('#author');
-    const releaseDate = document.querySelector('#release-date');
-    const publisher = document.querySelector('#publisher-form');
+    const genre = document.querySelector('#genre');
+    const publisher = document.querySelector('#publisher');
 
-    idMovie.value = response.id_book;
+    idBook.value = response.id_book;
     title.value = response.title;
     author.value = response.author;
-    releaseDate.value = response.gender;
+    genre.value = response.genre;
     publisher.value = response.publisher;
 }
 
 // Escuchar el evento 'DOMContentLoaded' que se dispara cuando el 
 // contenido del DOM ha sido completamente cargado y parseado.
 document.addEventListener('DOMContentLoaded', function () {
-    const btnSaveMovie = document.querySelector('#btn-save-book');
+    const btnSaveBook = document.querySelector('#btn-save-book');
     //ASOCIAR UNA FUNCION AL EVENTO CLICK DEL BOTON
-    btnSaveMovie.addEventListener('click', saveMovie);
+    btnSaveBook.addEventListener('click', saveBook);
     showBooks();
 });
