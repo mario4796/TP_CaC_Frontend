@@ -35,6 +35,10 @@ async function showBooks() {
     let books = await fetchData(BASEURL + '/api/books/', 'GET');
     const tableBooks = document.querySelector('#list-table-books tbody');
     tableBooks.innerHTML = '';
+    var boton = document.getElementById('btn-save-book');
+    if (boton.innerText === 'Actualizar') {
+        boton.innerText = 'Agregar';
+    }
     books.forEach((book, index) => {
         let tr = `<tr>
                     <td>${book.title}</td>
@@ -42,8 +46,8 @@ async function showBooks() {
                     <td>${book.genre}</td>
                     <td>${book.publisher}</td>
                     <td>
-                        <button class="btn-cac" onclick='updateMovie(${book.id_book})'><i class="fa fa-pencil" ></button></i>
-                        <button class="btn-cac" onclick='deleteMovie(${book.id_book})'><i class="fa fa-trash" ></button></i>
+                        <button class="btn-cac" onclick='updateBook(${book.id_book})'><img src="../Static/Imagenes/Icons/book_settings.png" width=30px style="filter: invert(1);"></button>
+                        <button class="btn-cac" onclick='deleteBook(${book.id_book})'><img src="../Static/Imagenes/Icons/book_remove.png" width=30px style="filter: invert(1);"><i class="fa fa-trash" ></button>
                     </td>
                   </tr>`;
         tableBooks.insertAdjacentHTML("beforeend", tr);
@@ -55,14 +59,15 @@ async function showBooks() {
  * un registro de pelicula
  * @returns 
  */
-async function saveMovie() {
+async function saveBook() {
+    console.log("Botón presionado"); // Verificar que la función se llama
     const idBook = document.querySelector('#id-book').value;
     const title = document.querySelector('#title').value;
     const author = document.querySelector('#author').value;
     const genre = document.querySelector('#genre').value;
     const publisher = document.querySelector('#publisher').value;
     //VALIDACION DE FORMULARIO
-    if (!title || !author || !releaseDate || !publisher) {
+    if (!title || !author || !genre || !publisher) {
         Swal.fire({
             title: 'Error!',
             text: 'Por favor completa todos los campos.',
@@ -87,8 +92,8 @@ async function saveMovie() {
         result = await fetchData(`${BASEURL}/api/books/`, 'POST', bookData);
     }
 
-    const formMovie = document.querySelector('#form-book');
-    formMovie.reset();
+    const formBook = document.querySelector('#form-books');
+    formBook.reset();
     Swal.fire({
         title: 'Exito!',
         text: result.message,
@@ -103,7 +108,7 @@ async function saveMovie() {
  * de acuedo al indice del mismo
  * @param {number} id posición del array que se va a eliminar
  */
-function deleteMovie(id) {
+function deleteBook(id) {
     Swal.fire({
         title: "¿Esta seguro de eliminar el libro?",
         showCancelButton: true,
@@ -123,8 +128,13 @@ function deleteMovie(id) {
  * para su edición
  * @param {number} id Id de la pelicula que se quiere editar
  */
-async function updateMovie(id) {
+async function updateBook(id) {
     //Buscamos en el servidor la pelicula de acuerdo al id
+    var boton = document.getElementById('btn-save-book');
+    if (boton.innerText === 'Agregar') {
+        boton.innerText = 'Actualizar';
+    }
+
     let response = await fetchData(`${BASEURL}/api/books/${id}`, 'GET');
     const idBook = document.querySelector('#id-book');
     const title = document.querySelector('#title');
@@ -137,6 +147,7 @@ async function updateMovie(id) {
     author.value = response.author;
     genre.value = response.genre;
     publisher.value = response.publisher;
+
 }
 
 // Escuchar el evento 'DOMContentLoaded' que se dispara cuando el 
