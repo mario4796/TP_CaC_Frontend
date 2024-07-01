@@ -46,8 +46,8 @@ async function showBooks() {
                     <td>${book.genre}</td>
                     <td>${book.publisher}</td>
                     <td>
-                        <button class="btn-cac" onclick='updateBook(${book.id_book})'><img src="../Static/Imagenes/Icons/book_settings.png" width=30px style="filter: invert(1);"></button>
-                        <button class="btn-cac" onclick='deleteBook(${book.id_book})'><img src="../Static/Imagenes/Icons/book_remove.png" width=30px style="filter: invert(1);"><i class="fa fa-trash" ></button>
+                        <button class="btn-cac" title="Actualizar" onclick='updateBook(${book.id_book})'><img src="../Static/Imagenes/Icons/book_settings.png" width=30px style="filter: invert(1);"></button>
+                        <button class="btn-cac" title="Eliminar" onclick='deleteBook(${book.id_book})'><img src="../Static/Imagenes/Icons/book_remove.png" width=30px style="filter: invert(1);"><i class="fa fa-trash" ></button>
                     </td>
                   </tr>`;
         tableBooks.insertAdjacentHTML("beforeend", tr);
